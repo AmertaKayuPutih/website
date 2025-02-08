@@ -1,8 +1,6 @@
 Todo------------------------------------------------------------------------------------------------------------------------------------
 <br><br>
 ***PRIORITY HIGH:<br>
- Add a translate widget // make default indoneisan
-<br>
 make header top-nav and other things proportional to screen size (some screens it looks way too big, some it looks normal)
 <br>
 ***PRIORITY MEDIUM:<br>
