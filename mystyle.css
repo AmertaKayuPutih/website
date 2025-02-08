@@ -1,7 +1,7 @@
 
 body {
     margin: 0;
-    background: rgb(89, 44, 21); /* Deep brown color inspired by Ambon's earthy tones */
+    background: rgb(29, 88, 11); /* Deep brown color inspired by Ambon's earthy tones */
     position: relative;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /* Generic font family */
 }
@@ -132,7 +132,7 @@ li {
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
     body {
         margin: 0;
-    /*    background: rgb(89, 44, 21); /* Deep brown color inspired by Ambon's earthy tones */ 
+        background: rgb(29, 88, 11); 
         position: relative;
         width: 100%;
     }
