@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html id="foo">
+
+<head>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="description" content="Amerta Kayu Putih Website.">
+  <meta name="keywords" content="Amerta Kayu Putih, Ambon">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="mystyle.css">
+  <title>
+    Amerta Kayu Putih - Galeri
+  </title>
+  <link rel="icon" href="images/Amerta_logo.png">
+
+  <script>
+    window.onload = function () {
+      const hash = window.location.hash;// location object has page url components
+      // defaults for no match
+
+         }
+
+  </script>
+
+  <link href="lightbox2-dev/src/css/lightbox.css" rel="stylesheet" />
+
+
+</head>
+<body>
+<div class="topnav">
+    <p2>Amerta Kayu Putih</p2><br>
+    <a style="white-space: nowrap;" href="index.html">Home •</a>
+    <a style="white-space: nowrap;" href="Galeri.html"> Galeri •</a>
+    <a style="white-space: nowrap;" href="produk.html"> Produk  •</a>
+    <a style="white-space: nowrap;" href="acara
+.html"> Acara •</a>
+    <a style="white-space: nowrap;" href="jobs.html"> Pekerjaan •</a>
+    <a style="white-space: nowrap;" href="information.html"> Informasi</a>
+</div>
+
+
+
+<img style = "height: 17%; width: 17%;" src="images/Amerta_logo.png">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<canvas id="canvas"></canvas>
+<script>
+  const canvas = document.getElementById('canvas');
+  const ctx = canvas.getContext('2d');
+  const goldenRatio = 1.61803398875;
+
+  function drawComplexChrysanthemumSpiral(scale, offsetX, offsetY, color) {
+    ctx.save();
+    ctx.translate(offsetX, offsetY);
+
+    for (let i = 0; i < 1500; i++) {
+      ctx.beginPath();
+      ctx.strokeStyle = color;
+      ctx.lineWidth = 1;
+
+      const angle = i * goldenRatio * Math.PI;
+
+      const x1 = Math.cos(angle) * scale * i;
+      const y1 = Math.sin(angle) * scale * i;
+
+      const x2 = Math.cos(angle + 0.001) * scale * (i + 1);
+      const y2 = Math.sin(angle + 0.001) * scale * (i + 1);
+
+      ctx.moveTo(x1, y1);
+      ctx.lineTo(x2, y2);
+
+      ctx.stroke();
+    }
+
+    for (let i = 0; i < 7777; i++) {
+      ctx.beginPath();
+      ctx.strokeStyle = color;
+      ctx.lineWidth = 222;
+
+      const angle = -i * goldenRatio * Math.PI;
+
+      const x1 = Math.cos(angle) * scale * i;
+      const y1 = Math.sin(angle) * scale * i;
+
+      const x2 = Math.cos(angle - 0.0016) * scale * (i + 1.6);
+      const y2 = Math.sin(angle - 0.0016) * scale * (i + 1.6);
+
+      ctx.moveTo(x1, y1);
+      ctx.lineTo(x2, y2);
+
+      ctx.stroke();
+    }
+
+    ctx.restore();
+  }
+
+  function resizeCanvas() {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+    const scale = canvas.width / 2500;
+    const offsetX = canvas.width / 2;
+    const offsetY = canvas.height / 2;
+
+    drawComplexChrysanthemumSpiral(scale, offsetX, offsetY, '#00001');
+  }screenTop
+
+  window.addEventListener('resize', resizeCanvas);
+  resizeCanvas();
+</script>
+<div class="lightGaleri1"></div>
+<button id="load">Lebih</button>
+<script>
+var links = [
+  "images/5f1af47b-a5c0-48a3-ac9c-3ba0f6d1466d.jpg",
+  "images/9b3c77e8-7fad-435b-945b-0dc05b8d6ae4.JPG",
+  "images/517b43bf-d693-4e65-918e-aa3227b0d670.JPG",
+  "images/54538bbe-3fc0-4c9d-9aba-cbc4a270919c.JPG",
+  "images/89285F71-10AA-4555-94FE-C09411080070.JPG",
+  "images/2469236e-a209-4d0d-afe4-edf8156cf421.JPG",
+  "images/68334423-145c-4255-a317-aa6d0929484e.JPG",
+  "images/Amerta_logo.png",
+  "images/c410ae8d-4f87-4246-81d3-c04454f67cdf.JPG",
+  //add photos here
+];
+
+var $Galeri = $(".lightGaleri1").first();
+var $loadMore = $("#load");
+
+function loadMore(e) {
+  for (var i = 0; i < 8; i++) {
+    if (links.length) {
+      var src = links.pop();
+      var $link = $("<a>");
+      var $img = $("<img>");
+
+      $img.attr("src", src);
+      $img.addClass("Galeri-image"); // Add class for styling
+
+      $link.attr("data-lightbox", 'image');
+      $link.attr("href", src).addClass("item");
+
+      $link.append($img);
+      $Galeri.append($link);
+    } else {
+      $loadMore.hide();
+    }
+  }
+}
+
+$loadMore.on("click", loadMore);
+loadMore();
+
+
+</script>
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+      <div class="footer">
+        Amerta - Kayu Putih <br>
+        Hubungi Kami - <a style="color: #08662f; text-decoration: none;" href="tel:+6281247109839">+6281247109839</a><br>
+        Ikuti Kami:
+        <a href="https://www.instagram.com/amerta.kayuputih?igsh=MWtvMnF4NXFqMm5lbA==" target="_blank" style="color: #08662f; text-decoration: none;">Instagram</a>
+    </div>
+  <script src="lightbox2-dev/src/js/lightbox.js"></script>
+</body>
+
+</html>
