@@ -1,0 +1,201 @@
+
+body {
+    margin: 0;
+    background: rgb(89, 44, 21); /* Deep brown color inspired by Ambon's earthy tones */
+    position: relative;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /* Generic font family */
+}
+
+canvas {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+h1 {
+    color: #06b850; /* Deep forest green color for headers */
+    font-size: 45px;
+    margin-top: 5px; /* Create space between header and content */
+}
+
+p {
+    color: rgb(241, 241, 241); /* Dark forest green color for paragraphs */
+    font-size: 30px;
+    text-align: left;
+    padding-left: 20px;
+    padding-right: 20px;
+   /* background-color: #116b3157 */
+}
+
+p2 {
+    color: #08662f; /* Deep forest green color for headers */
+    font-size: 30px;
+    font-weight: bold;
+}
+
+html {
+    text-align: center;
+}
+
+
+.style2 {
+    filter: none;
+}
+
+.topnav {
+    background-color: #20ca5c;
+    
+}
+.topnav a{
+    text-decoration: none; /* Remove default underline */
+    color: rgb(241, 241, 241);
+    font-size: 36px;
+ /*   border-right: 1px solid #c9ffe9; /* Solid line between elements */
+   /* border-left: 1px solid #c9ffe9; /* Solid line between elements */
+padding-left: 4px;
+padding-right: 4px;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 17px;
+    text-align: center;
+    color: rgb(241, 241, 241);
+    background-color: #20ca5c; /* Warm brown background inspired by Ambon's soil */
+    padding: 0px; /* Padding for footer content */
+}
+
+
+img {
+    color: #c9ffe9; /* Light green for images */
+  }
+
+  a {
+    color: #20ca5c; /* Dark forest green for links */
+  }
+
+.nav a {
+    color: rgb(241, 241, 241); /* Dark forest green color for paragraphs */
+    font-size: 30px;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+   /* background-color: #116b3157 */
+}
+
+  .lightGaleri1 a {
+    height: auto;
+  }
+
+  .lightGaleri1 a img {
+    margin: 4px;
+    max-width: 20%;
+    background-color: #c9ffe9;
+  }
+
+  /* New CSS for image dimensions */
+  .Galeri-image {
+    width: 350px; /* Adjust as needed */
+    height: 400px; /* Adjust as needed */
+    object-fit: cover; /* Ensures the image covers the specified dimensions */
+  }
+
+button {
+    border: none;
+    color: rgb(241, 241, 241); /* White color for button text */
+    background-color: #20ca5c; /* Deep forest green for button background */
+    padding: 15px 52px;
+    text-align: center;
+    display: inline-block;
+    font-size: 20px;
+    cursor: pointer; /* Add cursor pointer to indicate interactivity */
+    border-radius: 5px; /* Rounded corners for button */
+    margin-top: 20px; /* Spacing above button */
+}
+
+strong {
+    color: #20ca5c; /* Change text color to green */
+}
+
+li {
+    color: #20ca5c; /* Change text color to green */
+}
+
+.backtoTop {
+    position: fixed; bottom: 85px; right: 20px; color: #06b850; text-decoration: none; font-size: 22px; font-weight: bold; z-index: 1000;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    body {
+        margin: 0;
+        background: rgb(89, 44, 21); /* Deep brown color inspired by Ambon's earthy tones */
+        position: relative;
+        width: 100%;
+    }
+
+    .backtoTop{
+    position: fixed; bottom: 200px; right: 20px; color: #20ca5c; text-decoration: none; font-size: 35px; font-weight: bold; z-index: 1000;
+
+    }
+    canvas {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+
+    button {
+        color: rgb(241, 241, 241);
+        background-color: #20ca5c;
+        padding: 30px 104px;
+        text-align: center;
+        display: inline-block;
+        font-size: 40px;
+        border: none;
+    }
+
+    p {
+        color: rgb(241, 241, 241);
+        bottom: 0;
+        font-size: 40px;
+        text-align: left;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .topnav {
+        background-color: #20ca5c;
+        
+    }
+    .topnav a{
+        text-decoration: none; /* Remove default underline */
+        color: rgb(241, 241, 241);
+        font-size: 50px;
+    padding-left: 4px;
+    padding-right: 4px;
+    }
+    .footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        font-size: 22px;
+        text-align: center;
+        color: rgb(241, 241, 241);
+        background-color: #20ca5c; /* Warm brown background inspired by Ambon's soil */
+        padding: 0px; /* Padding for fo
+        oter content */
+    }
+    .nav a {
+        color: #ffffff; /* Dark forest green color for paragraphs */
+        font-size: 30px;
+        text-align: center;
+        padding-left: 20px;
+        padding-right: 20px;
+       /* background-color: #116b3157 */
+    }
+}
